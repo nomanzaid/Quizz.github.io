@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz.com</title>
+    <style>
+              
+        
+        .topnav {
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        
+        .topnav a.active {
+          background-color: #04AA6D;
+          color: white;
+        }
+        /* video background */
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* page content */
+
+body {
+  font-family: Trebuchet MS;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-top: 30vh; 
+}
+
+h2 { font-size: 3rem; }
+
+@media (max-width: 750px) {
+    #background-video { display: none; }
+    body {
+      background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
+      background-size: cover;
+    }
+}
+input{
+    display: flex;
+}
+main {
+  background-color: lightblue;
+  font-size: 2rem;
+  margin-top: 50vh;
+  padding: 10px;
+  position: relative;
+}
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="feedback.html">Feed Back</a>
+       <a href="English.html">English Quiz</a>
+       <a href="random quiz.html">Random Quiz</a>
+       <a href="Sign-in.html">Sign-in</a>
+      
+      </div>
+      <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg" width="1550px">
+        <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
+      </video>
+     
+      <h1>Welcome To Quiz.com</h1>
+      <h2>By N,Z.</h2>
+      
+    
+
+</body>
+</html>
